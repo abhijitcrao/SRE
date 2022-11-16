@@ -5,15 +5,18 @@
     <title>Working with Disk Space or Folder Space </title>
 </head>
 <body>
-<table>
-    <b> On Windows, we can use two options </b>
-        <td>1. Use Explorer to check the folder size using Properties option on folders ( this can be tedious and requires time to check all)</td>
-    <td>2. Use Powershell to understand the top 25 files consuming the disk space
-    1. Get-ChildItem c:\ -r| sort -descending -property length | select -first 10 name, Length, Directory,@{Name="MB";Expression={[Math]::round($_.length / 1MB, 2)}}
-    2. Directory will provide the dir name where the file located, it comes handy when to decide which file to delete
-	3. The –r (Recurse) key means that all subfolder will be searched recursively. You can restrict the check to a certain depth level using –Depth parameter. If you don’t specify the path, all subfolders of the current directory will be searched.
-</td>
-</table>
+     <b> On Windows, we can use two options </b>
+    </p>
+    1. Use Explorer to check the folder size using Properties option on folders ( this can be tedious and requires time to check all)
+    </p>2. Use Powershell to understand the top 25 files consuming the disk space
+    </p>
+
+            a. Get-ChildItem c:\ -r| sort -descending -property length | select -first 10 name, Length, Directory,@{Name="MB";Expression={[Math]::round($_.length / 1MB, 2)}}
+    </p>
+            b. Directory will provide the dir name where the file located, it comes handy when to decide which file to delete
+     </p>
+     3. The –r (Recurse) key means that all subfolder will be searched recursively. You can restrict the check to a certain depth level using –Depth parameter. If you don’t specify the path, all subfolders of the current directory will be searched.
+
 
 http://woshub.com/find-large-files-with-powershell/
 
