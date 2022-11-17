@@ -22,9 +22,9 @@
 
 ## Action Items :
 
-| Action Item Description | Type | Author | JIRA/Problem Ticket |
-|------------------------ |----- |------- |---------------------|
- |                         |      |        |                     |
+| Action Item Description | Type | Author | JIRA/Problem Ticket | Current Status |
+|------------------------ |----- |------- |---------------------|----------------|
+ |                         |      |        |                     |                 |
 
 ## Lessons Learned 
 
