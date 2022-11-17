@@ -33,9 +33,10 @@
 * Alert on logs helped us to catch the issue faster
 
 ### What went wrong
-*
+* 
 
 ### Where we got lucky
+* 
 
 ## Timeline
   * Date : 
