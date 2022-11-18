@@ -27,7 +27,8 @@
  |                         |      |        |                     |                 |
 
 ## Lessons Learned 
-
+_This section is all about things that went well, things that needs improvements and things that can be done differently
+Add all the relevant information without prejudice. This is going to help to fix the loop holes if any_   
 ### What went well
 * Monitoring quickly alerted us on high rate
 * Alert on logs helped us to catch the issue faster
