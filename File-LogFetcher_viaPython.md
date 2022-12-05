@@ -6,6 +6,6 @@ This method will help to download (only allowed) files from Servers to your own 
 
 ## Here is the sample code
 
-nohup python -m http.server 12345 >/dev/null 2>&1 &
+_nohup python -m http.server 12345 >/dev/null 2>&1 &_
 
 ###### **Caution**: HTTP server will start on the same dir where you fire this command, so make sure you fire this command only from the required and permitted location like /log.
