@@ -29,7 +29,7 @@ _**oc get event -o wide  | sed -r 's/ {2,}/,g'**_
 
 Sample script can be created here so to make it more useful
 
-#!/bin/bash
+`````#!/bin/bash
 #Name: <scriptName>
 #author: Abhijit Rao
 #Useage:
@@ -45,4 +45,4 @@ then
     oc get deployment | sed -r 's/ {2,}/,g'
 else
     oc get $object | sed -r 's/ {2,}/,g'
-fi
+fi`````
