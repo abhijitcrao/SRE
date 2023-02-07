@@ -13,16 +13,16 @@ PFB the basic command line's that can be used to interact and share output back 
 
 Get Quota Details of the project
 
-_** oc get quota | sed -r 's/ {2,}/,g' | cut -d ',' -f-4 **_
+_**oc get quota | sed -r 's/ {2,}/,g' | cut -d ',' -f-4**_
 
 Get Deployment Descriptor of project
 
-_** oc get deployment | sed -r 's/ {2,}/,g'  **_
+_**oc get deployment | sed -r 's/ {2,}/,g'**_
 
 Get POD details along with Restart counters
 
-_** oc get pods -o wide | sed -r 's/ {2,}/,g'  **_
+_**oc get pods -o wide | sed -r 's/ {2,}/,g**_
 
 Get Events (this is important to know the current operations going on under OpenShift)
 
-_** oc get event -o wide  | sed -r 's/ {2,}/,g'  **_
+_**oc get event -o wide  | sed -r 's/ {2,}/,g'**_
