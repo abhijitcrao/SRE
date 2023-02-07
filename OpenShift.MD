@@ -1,4 +1,4 @@
-# Below File share the way we can Monitor OpenShift Infra via Geneos
+# Let's Explore the way we can Monitor OpenShift Infra via Geneos
 
 Prep work:
 - We are using _OCI CLI_ command line i.e. OC commands to interact and share the output to Geneos.
@@ -26,3 +26,23 @@ _**oc get pods -o wide | sed -r 's/ {2,}/,g**_
 Get Events (this is important to know the current operations going on under OpenShift)
 
 _**oc get event -o wide  | sed -r 's/ {2,}/,g'**_
+
+Sample script can be created here so to make it more useful
+
+#!/bin/bash
+#Name: <scriptName>
+#author: Abhijit Rao
+#Useage:
+
+#We will be passing parameter for the OC commands here
+object=$1
+#we are checking here if the request is for Quota 
+if [[$1 == "quota"]]
+then
+    oc get quota | sed -r 's/ {2,}/,g' | cut -d ',' -f-4
+elseif [[ $1 =="deployment" ]]
+then
+    oc get deployment | sed -r 's/ {2,}/,g'
+else
+    oc get $object | sed -r 's/ {2,}/,g'
+fi
